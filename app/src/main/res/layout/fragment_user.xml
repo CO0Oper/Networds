@@ -6,13 +6,18 @@
     tools:context=".BlankFragment">
 
     <TextView
-        android:id="@+id/fragment_words"
+        android:id="@+id/fragment_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="24sp"
         android:textColor="@android:color/black"
         android:text="test" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="User fragment"/>
 
 
 </FrameLayout>

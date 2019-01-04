@@ -25,19 +25,14 @@
             android:id="@+id/today_tab"
             style="@style/Custom.TabRadioButton"
             android:checked="true"
-            android:drawableTop="@drawable/module"
-            android:text="今日" />
-
-
+            android:drawableTop="@drawable/module"/>
 
         <View style="@style/Custom.TabRadioButton" />
 
         <RadioButton
             android:id="@+id/contact_tab"
             style="@style/Custom.TabRadioButton"
-            android:drawableTop="@drawable/person"
-            android:text="通讯录" />
-
+            android:drawableTop="@drawable/person"/>
 
     </RadioGroup>
 
@@ -49,6 +44,5 @@
         android:layout_centerHorizontal="true"
         android:background="@android:color/transparent"
         android:src="@drawable/mic" />
-
 
 </RelativeLayout>

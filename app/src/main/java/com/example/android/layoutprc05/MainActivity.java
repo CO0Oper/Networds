@@ -23,9 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         mTabRadioGroup = findViewById(R.id.tabs_rg);
+
         mFragmentSparseArray = new SparseArray<>();
         mFragmentSparseArray.append(R.id.today_tab, BlankFragment.newInstance("今日"));
-        mFragmentSparseArray.append(R.id.contact_tab, BlankFragment.newInstance("通讯录"));
+        mFragmentSparseArray.append(R.id.contact_tab, UserFragment.newInstance("通讯录"));
         mTabRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
