@@ -2,7 +2,6 @@ package com.example.android.layoutprc05;
 
 import com.csvreader.CsvReader;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -13,7 +12,6 @@ public class CSVreader {
 
     Scanner sc = null;
     static ArrayList<WordCons> words = new ArrayList<>();
-
 
     public CSVreader() {
     }
@@ -42,11 +40,8 @@ public class CSVreader {
 
             csvList.add(reader.getValues());
         }
-
         reader.close();
 
-
-            //if (csvList.get(row)[0] != null)
             for(int row = 0; row < csvList.size(); row++) {
                 //int row = ;
                 if(csvList.get(row)[0]!=null && csvList.get(row)[0] != "") {
@@ -134,9 +129,6 @@ public class CSVreader {
                 words.add(wordcons);
                 //System.out.println(words.get(0).output());
             }
-
-
         }
-       // return output.toString();
     }
 
